@@ -63,12 +63,11 @@ def team():
     if request.method=="POST":
         team_size=request.form['team_size']
         team_id=request.form['team_id']
-        print("\n\n\n\n\n\n")
-        print(type(team_size))
-        print(request.form)
-        print("\n\n\n\n\n\n")
+        # print("\n\n\n\n\n\n")
+        # print(type(team_size))
+        # print(request.form)
+        # print("\n\n\n\n\n\n")
         for i in list(range(2, int(team_size)+1)):
-           
             (name, reg_no, email, phone) = (request.form['name'+str(i)], request.form['reg_no'+str(i)], request.form['email'+str(i)], request.form['phone'+str(i)])
             member=add_member(team_id, name, reg_no, email, phone)
         
