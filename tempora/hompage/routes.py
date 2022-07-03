@@ -1,5 +1,4 @@
-from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify
-from tempora.register.routes import register_blueprint
+from flask import Blueprint, render_template
 
 homepage_blueprint=Blueprint(
     'homepage',

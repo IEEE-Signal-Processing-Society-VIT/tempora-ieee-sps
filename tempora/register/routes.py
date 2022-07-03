@@ -1,6 +1,4 @@
-from email import message
-from tkinter.messagebox import RETRY
-from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify
+from flask import Blueprint, render_template, request, redirect, url_for
 from tempora.models import Team
 from tempora import db
 import json
