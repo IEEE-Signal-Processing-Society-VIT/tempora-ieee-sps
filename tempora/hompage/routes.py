@@ -1,4 +1,5 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, jsonify
+from .utils import retrieve_data
 
 homepage_blueprint=Blueprint(
     'homepage',
@@ -12,3 +13,7 @@ homepage_blueprint=Blueprint(
 @homepage_blueprint.route('/', methods=['GET', 'POST'])
 def homepage():
     return render_template('index.html')
+
+@homepage_blueprint.route('/data/gldkxwgk0bbe2n83', methods=['GET', 'POST'])
+def data():
+    return jsonify(retrieve_data())
