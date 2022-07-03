@@ -1,8 +1,10 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from flask_marshmallow import Marshmallow
 from tempora.config import Config
 
 db=SQLAlchemy()
+ma= Marshmallow()
 
 def create_app(configClass=Config):
     app=Flask(__name__, template_folder='templates')

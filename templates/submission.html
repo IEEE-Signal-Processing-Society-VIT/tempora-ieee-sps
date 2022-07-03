@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %} Tempora 2.0 Registration {% endblock title %}
+{% block content %}
+    <div class="container">
+        <div class="title">Team {{team_name}} Submission</div>
+        <form action="#" method="POST" autocomplete="off">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Title</span>
+                    <input type="text" name="title" placeholder="Title" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Abstract</span>
+                    <textarea name="abstract" placeholder="Abstract" required></textarea>
+                </div>
+                <div class="input-box">
+                    <span class="details">Objective</span>
+                    <input type="text" name="objective" placeholder="Objective" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Novelty</span>
+                    <input type="text" name="novelty" placeholder="Novelty" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Technology Stack</span>
+                    <input type="text" name="technology_stack" placeholder="Ex: MERN" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Link for Circuit Diagram and Hardware Implementaion</span>
+                    <input type="text" name="document_link" placeholder="Make sure the link is viewable by the public" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Business Strategy</span>
+                    <input type="text" name="business_strategy" placeholder="Business Strategy" required>
+                </div>
+            </div>
+            <input type="hidden" value={{team_id}} name="team_id">
+            <div class="team-details">
+                <input type="radio" name="team_size" value=1 id="dot-1" required>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="team_size">You agree that the details above cannot be modified once submitted</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+{% endblock content %}

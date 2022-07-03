@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %} Tempora 2.0 Registration {% endblock title %}
+{% block content %}
+    <div class="container">
+        <div class="title">Registration - Enter Details of your Team Members {{messages}}</div>
+        <h1>Team {{team_name}}</h1>
+        <form action="#" method="POST" autocomplete="off">
+            {% for i in team_size %}
+            <div class="title">Member {{i+1}} details: </div>
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Name</span>
+                    <input type="text" name="name{{i}}" placeholder="Henry" >
+                </div>
+                <div class="input-box">
+                    <span class="details">Registration Number(if VITian)</span>
+                    <input type="text" name="reg_no{{i}}" placeholder="Ex: 20BXX0001">
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" name="email{{i}}" placeholder="@vitstudent.ac.in / @gmail.com" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="phone" name="phone{{i}}" placeholder="Ex: +91 944xxxxxxx" required>
+                </div>
+            </div>
+            {% endfor %}
+            <input type="hidden" value={{team_size}} name="member_no">
+            <input type="hidden" value={{team_id}} name="team_id">
+            <div class="team-details">
+                <input type="radio" name="team_size" value=1 id="dot-1" required>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="team_size">You agree that the details above cannot be modified once submitted</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Continue to Submission">
+            </div>
+        </form>
+    </div>
+{% endblock content %}
