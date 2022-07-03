@@ -40,7 +40,7 @@ def register():
         messages={}
         messages['team_id']=add_team(team_name, team_size)
         messages['lead_id']=add_member(messages['team_id'], name, reg_no, email, phone)
-        if team_size==1:
+        if team_size==str(1):
             messages=json.dumps(messages)
             return redirect(url_for('register.submission', message=messages))
         messages['team_size']=team_size
