@@ -8,6 +8,7 @@ def create_app(configClass=Config):
     app=Flask(__name__, template_folder='templates')
     app.config.from_object(configClass)
     db.init_app(app)
+    app.static_folder = 'static'
 
     #adding blueprints
     from tempora.register.routes import register_blueprint
