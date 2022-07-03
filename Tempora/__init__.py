@@ -1,11 +1,11 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from Tempora.config import Config
+from tempora.config import Config
 
 db=SQLAlchemy()
 
 def create_app(configClass=Config):
-    app=Flask(__name__)
+    app=Flask(__name__, template_folder='templates')
     app.config.from_object(configClass)
     db.init_app(app)
 
