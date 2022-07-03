@@ -10,6 +10,8 @@ def create_app(configClass=Config):
     db.init_app(app)
 
     #adding blueprints
+    from tempora.register.routes import register_blueprint
+    app.register_blueprint(register_blueprint)
 
     with app.app_context():
         db.create_all()
