@@ -1,4 +1,3 @@
-from turtle import title
 from tempora import db, ma # Import the database
 
 class Team(db.Model):
