@@ -7,10 +7,6 @@
     scroll-behavior: smooth;
   }
   
-  .about_us {
-    font-size: 10px;
-  }
-
   .navbar {
     background: #131313;
     height: 80px;
@@ -334,8 +330,16 @@
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
+    text-align: justify;
   }
-  
+  .main__content ul {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: justify;
+
+  }
+
   .main__btn {
     font-size: 1.8rem;
     background: #833ab4;
@@ -396,6 +400,22 @@
   
   .fa-layer-group,
   .fa-users {
+    font-size: 14rem;
+  }
+  .fa-layer-group,
+  .fa-trophy {
+    font-size: 14rem;
+  }
+  .fa-layer-group,
+  .fa-edit {
+    font-size: 14rem;
+  }
+  .fa-layer-group,
+  .fa-file-alt {
+    font-size: 14rem;
+  }
+  .fa-layer-group,
+  .fa-lightbulb {
     font-size: 14rem;
   }
   
