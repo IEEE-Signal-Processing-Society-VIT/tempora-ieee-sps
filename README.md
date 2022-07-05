@@ -17,4 +17,4 @@ Access Register page by adding '/register' to the https link generated. The acce
  * Debugger is active!
 ```
 
-For first timers using flask. The main app is located in the directory `tempora`. Templates contains all the related .html files. `static` directory which contains all the stylesheets and scripts is located in the tempora directory for easier accessibility.
+For first timers using flask. The main app is located in the `tempora` directory. `templates` directory contains all the related .html files. `static` directory which contains all the stylesheets and scripts is located in the tempora directory for easier accessibility.
