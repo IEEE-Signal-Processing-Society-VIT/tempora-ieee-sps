@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
   }
   
+  .about_us {
+    font-size: 10px;
+  }
+
   .navbar {
     background: #131313;
     height: 80px;
