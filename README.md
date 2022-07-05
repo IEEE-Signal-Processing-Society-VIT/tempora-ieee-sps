@@ -1,4 +1,4 @@
-# Tempora IEEE SPS
+# Tempora 2.0 IEEE SPS
 This is a website built for Tempora 2.0 Registrants to make their submissions to the fest.
 The app can be run by using the following set of commands:
 
@@ -16,3 +16,5 @@ Access Register page by adding '/register' to the https link generated. The acce
  * Restarting with stat
  * Debugger is active!
 ```
+
+For first timers using flask. The main app is located in the directory `tempora`. Templates contains all the related .html files. `static` directory which contains all the stylesheets and scripts is located in the tempora directory for easier accessibility.
