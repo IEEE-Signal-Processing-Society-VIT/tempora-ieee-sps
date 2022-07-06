@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tempora 2.0</title>
     <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="icon" type="sps-icon/favicon" href="{{ url_for('static', filename='Images/SPS WHITE LOGO (1) 2.png')}}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"/>
-    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='sylesheets/homepage.css') }}" /> 
+      <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='sylesheets/homepage.css') }}" />
+    <!-- <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='sylesheets/homepage.css') }}" />  --> 
 
   </head>
   <body>
@@ -31,7 +33,7 @@
             <a href="#services" class="navbar__links" id="services-page">Domains</a>
           </li>
           <li class="navbar__btn">
-            <a href="#sign-up" class="button" id="signup">Sign Up</a>
+            <a href="#sign-up" class="button" id="signup">Tempora</a>
           </li>
         </ul>
       </div>
@@ -50,79 +52,147 @@
     <div class="main" id="about">
       <div class="main__container">
         <div class="main__img--container">
-          <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
+          <div class="main__img--card"> <img src="{{ url_for('static', filename='Images/SPS WHITE LOGO (1) 2.png')}}"></div>
+          <!-- <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='sylesheets/homepage.css') }}" /> -->
         </div>
         <div class="main__content">
-          <h1>Waiting for an opportunity to showcase your Idea?</h1>
-          <h2>Here is the perfect chance </h2>
-          <p class="about_us">Start brainstorming and conquer it with one extraordinary idea!!!</p>
-          <button class="main__btn"><a href="register">Register Now!</a></button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Services Section -->
-    <div class="services" id="services">
-      <h1>Domains</h1>
-      <div class="services__wrapper">
-        <div class="services__card">
-          <h2>Signal Processing</h2>
-          <p>Analysing,modifying and synthesizing signals</p>
-          <div class="services__btn"><button></button></div>
-        </div>
-        <div class="services__card">
-          <h2>Open Innovation</h2>
-          <p>FILLLLLLLLL SOMETHING HERE</p>
-          <div class="services__btn"><button></button></div>
-        </div>
-        <div class="services__card">
-          <h2>Healthcare</h2>
-          <p>FILLLLLLLLL SOMETHING HERE</p>
-          <div class="services__btn"><button></button></div>
-        </div>
-        <div class="services__card">
-          <h2>Safety and defense</h2>
-          <p>FILLLLLLLLL SOMETHING HERE</p>
-          <div class="services__btn"><button></button></div>
-        </div>
-        <div class="services__card">
-          <h2>Environment</h2>
-          <p>FILLLLLLLLL SOMETHING HERE</p>
-          <div class="services__btn"><button></button></div>
-        </div>
-        <div class="services__card">
-          <h2>Cyber Security</h2>
-          <p>FILLLLLLLLL SOMETHING HERE</p>
-          <div class="services__btn"><button></button></div>
-        </div>
-        <div class="services__card">
-          <h2>Security and Surveillance</h2>
-          <p>FILLLLLLLLL SOMETHING HERE</p>
-          <div class="services__btn"><button></button></div>
-        </div>
-        <div class="services__card">
-          <h2>Agriculture</h2>
-          <p>FILLLLLLLLL SOMETHING HERE</p>
-          <div class="services__btn"><button></button></div>
-        </div>
-        <div class="services__card">
-          <h2>Machine Learning</h2>
-          <p>FILLLLLLLLL SOMETHING HERE</p>
-          <div class="services__btn"><button></button></div>
-        </div>
-        <div class="services__card">
-          <h2>Energy Management</h2>
-          <p>FILLLLLLLLL SOMETHING HERE</p>
-          <div class="services__btn"><button></button></div>
+          <h1>Let's introduce you to our chapter!</h1>
+          <h2>ABOUT IEEE-SPS-VIT </h2>
+          <p>Founded as IEEE’s first society in 1948, the Signal Processing Society is the world’s premier association for signal processing engineers and industry professionals. IEEE-SPS VIT Chapter is one of the leading and finest student chapters in VIT University. We conduct webinars, classroom sessions for hands-on experience, night lab sessions and outreach in Vellore. Our primary vision is to provide the innovative and enthusiastic 'engineers-to-be' a platform to explore their ideas and knowledge in t
+            he Signal Processing field. We aim at making students apply their knowledge into real-life, productive projects; hereby creating progress in the scientific arena</p>
         </div>
       </div>
     </div>
 
     <!-- Features Section -->
     <div class="main" id="sign-up">
+        <div class="main__container">
+          <div class="main__content">
+            <h1>Let's Introduce you to TEMPORA </h1>
+            <h2>TEMPORA</h2>
+            <p>Tempora 2.0 is a week long ideathon conducted by IEEE SPS. There are 5 technical themes and 5 problem statements for the participants to choose to ideate on. A form link will be shared for submission of innovative ideas in form of a documentation.
+                An ideathon and the perfect platform for your imagination skills where a creative and unique idea is enough to make you win.
+                
+                'All achievements, all earned reaches have their beginning in an idea' - Napolean Hill</p>
+            <!-- <p>Top 3 will be featured in our social media handle</p> -->
+            <button class="main__btn"><a href="form.html">Register Now!</a></button>
+          </div>
+          <div class="main__img--container">
+            <div class="main__img--card" id="card-2">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Services Section -->
+    <div class="services" id="services">
+      <h1>Domains</h1>
+      <div class="services__wrapper">
+        <div class="services__card">
+          <h2>Signal Processing</h2>
+          
+          <!-- <div class="services__btn"><button></button></div> -->
+        </div>
+        <div class="services__card">
+          <h2>Robotics Process Automation</h2>
+          
+          <!-- <div class="services__btn"><button></button></div> -->
+        </div>
+        <div class="services__card">
+          <h2>Internet of Things</h2>
+      
+          <!-- <div class="services__btn"><button></button></div> -->
+        </div>
+        <div class="services__card">
+          <h2>Blockchain</h2>
+         
+          <!-- <div class="services__btn"><button></button></div> -->
+        </div>
+        <div class="services__card">
+          <h2>Cyber Security</h2>
+
+          <!-- <div class="services__btn"><button></button></div> -->
+        </div>
+        <div class="services__card">
+          <h2>Problem Statement 1</h2>
+          <p>Reducing food wastage by monitoring/optimizing supply chain</p>
+          <!-- <div class="services__btn"><button></button></div> -->
+        </div>
+        <div class="services__card">
+          <h2>Problem Statement 2</h2>
+          <p>Signal processing to enable secure communications for military applications </p>
+          <!-- <div class="services__btn"><button></button></div> -->
+        </div>
+        <div class="services__card">
+          <h2>Problem Statement 3</h2>
+          <p>Design/deployment of a secure blockchain based voting system </p>
+          <!-- <div class="services__btn"><button></button></div> -->
+        </div>
+        <div class="services__card">
+          <h2>Problem Statement 4</h2>
+          <p>Using AR/VR/ MR for immersive teaching </p>
+          <!-- <div class="services__btn"><button></button></div> -->
+        </div>
+        <div class="services__card">
+          <h2>Problem Statement 5</h2>
+          <p>Personal identity Security using cyber security or blockchain</p>
+          <!-- <div class="services__btn"><button></button></div> -->
+        </div>
+      </div>
+      <!-- <div class="services__card">
+        <h2>Problem Statement 4</h2>
+        <p>Analysing,modifying and synthesizing signals</p>
+        <div class="services__btn"><button></button></div>
+      </div> -->
+      
+    </div>
+    <!-- INSTRUCTIONS -->
+    <div class="main" id="about">
+        <div class="main__container">
+          <div class="main__img--container">
+            <div class="main__img--card"><i class="fas fa-file-alt"></i></div>
+          </div>
+          <div class="main__content">
+            <!-- <h1>Let's introduce you to our chapter!</h1> -->
+            <h2>Instructions </h2>
+            <p><ul>
+                <li>Participants have to submit documentation of an innovative idea.</li>
+                <li>Idea will be judged on the basis of its novelty, creativity and feasibility.</li>
+                <li>Team size 1-3.</li>
+                <li>For Submission here in this website, click on Register Button and fill the information accordingly.</li>
+                <li>Providing correct details of all members of your group is mandatory for generating certificates.</li>
+                <li>Idea submission starts on 12th July and ends on 19th July.</li>
+            </ul></p>
+          </div>
+        </div>
+      </div>
+      <!-- Details to be filled -->
+    <div class="main" id="about">
+        <div class="main__container">
+          <div class="main__img--container">
+            <div class="main__img--card"><i class="fa fa-edit"></i></i></div>
+          </div>
+          <div class="main__content">
+            <!-- <h1>Let's introduce you to our chapter!</h1> -->
+            <h2>Details to be filled </h2>
+            <p><ul>
+                <li>Title of idea.</li>
+                <li>Abstract.</li>
+                <li>Objective.</li>
+                <li>Novelty.</li>
+                <li>Tech stack.</li>
+                <li>Circuit/block diagram (upload your document in your google drive and share the link here, make sure it is visible to all).</li>
+                <li>Hardware implementation </li>
+                <li>Business strategy</li>
+            </ul></p>
+          </div>
+        </div>
+      </div>
+    <!-- Features Section -->
+    <div class="main" id="sign-up">
       <div class="main__container">
         <div class="main__content">
-          <h1>Build Your Team</h1>
+          <!-- <h1></h1> -->
           <h2>Perks</h2>
           <p>All participants will get certificates</p>
           <p>Top 3 will be featured in our social media handle</p>
@@ -130,11 +200,27 @@
         </div>
         <div class="main__img--container">
           <div class="main__img--card" id="card-2">
-            <i class="fas fa-users"></i>
+            <i class="fas fa-trophy"></i>
           </div>
         </div>
       </div>
     </div>
+    <!-- Contact Us -->
+    <div class="main" id="sign-up">
+        <div class="main__container">
+          <div class="main__content">
+            <!-- <h1></h1> -->
+            <h2>Contact Us</h2>
+            <p>Arul Dharshan S</p>
+            <p>9715422263</p>
+          </div>
+          <div class="main__img--container">
+            <div class="main__img--card" id="card-2">
+              <i class="fas fa-users"></i>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Footer Section -->
     <div class="footer__container">
@@ -149,7 +235,7 @@
           <div class="footer__link--items">
             <h2>Social Media</h2>
             <a href="https://www.instagram.com/ieee_sps_vitv/?hl=en">Instagram</a> <a href="https://www.facebook.com/vitieeesps/">Facebook</a>
-            <a href="https://www.linkedin.com/company/ieee-sps-vit/">LinkedIn</a>
+            <a href="https://www.linkedin.com/company/ieee-sps-vit/">LinkedIn</a><a href="ieeesps@vit.ac.in">G-mail</a>
           </div>
         </div>
       </div>
@@ -169,11 +255,14 @@
             <a href="https://www.linkedin.com/company/ieee-sps-vit/" class="social__icon--link"
               ><i class="fab fa-linkedin"></i
             ></a>
+            <!-- <a href="ieeesps@vit.ac.in" class="social__icon--link" placeholder="G-mail">
+                <i class="fab fa-mail"></i> -->
+            </a>
           </div>
         </div>
       </section>
     </div>
 
-    <script src="{{url_for('static', filename='scripts/app.js')}}"></script>
+    <script src="app.js"></script>
   </body>
 </html>
