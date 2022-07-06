@@ -35,9 +35,11 @@ def register():
             name_exists['error']="Name Exists, Try again."
             name_exists=json.dumps(name_exists)
             return redirect(url_for('register.register', message=name_exists))
+        
         messages={}
         messages['team_id']=add_team(team_name, team_size)
         messages['lead_id']=add_member(messages['team_id'], name, reg_no, email, phone)
+        
         if team_size==str(1):
             messages=json.dumps(messages)
             return redirect(url_for('register.submission', message=messages))
@@ -61,10 +63,7 @@ def team():
     if request.method=="POST":
         team_size=request.form['team_size']
         team_id=request.form['team_id']
-        # print("\n\n\n\n\n\n")
-        # print(type(team_size))
-        # print(request.form)
-        # print("\n\n\n\n\n\n")
+        
         for i in list(range(2, int(team_size)+1)):
             (name, reg_no, email, phone) = (request.form['name'+str(i)], request.form['reg_no'+str(i)], request.form['email'+str(i)], request.form['phone'+str(i)])
             member=add_member(team_id, name, reg_no, email, phone)
