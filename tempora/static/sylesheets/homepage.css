@@ -195,7 +195,7 @@
   .hero {
     background: #000000;
     background: linear-gradient(to right, #161616, #000000);
-    padding: 200px 0;
+    padding: 10px 0;
   }
   
   .hero__container {
@@ -208,6 +208,24 @@
     height: 90%;
     text-align: center;
     padding: 30px;
+  }
+
+  .main__img--container1 {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .main__img--card1 {
+    margin: 10px;
+    height: 450px;
+    width: 450px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, black);
+    padding: 10px;
   }
   
   .hero__heading {
@@ -260,6 +278,17 @@
   }
   
   @media screen and (max-width: 768px) {
+      .main__img--container1 {
+        display: flex;
+        justify-content: center;
+      }
+    
+      .main__img--card1 {
+        height: 425px;
+        width: 425px;
+      }
+      
+    }
     .hero__heading {
       font-size: 60px;
     }
@@ -267,7 +296,6 @@
     .hero__description {
       font-size: 40px;
     }
-  }
   
   /* About Section */
   .main {
