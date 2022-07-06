@@ -6,4 +6,5 @@ tempora/__pycache__/
 tempora/hompage/__pycache__/
 tempora/register/__pycache__/
 tempora/static/.DS_Store
-.DS_Store
+.DS_Store.env
+.env/
