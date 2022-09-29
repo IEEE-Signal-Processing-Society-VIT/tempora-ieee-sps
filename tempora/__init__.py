@@ -19,8 +19,8 @@ def create_app(configClass=Config):
     from tempora.hompage.routes import homepage_blueprint
     app.register_blueprint(homepage_blueprint)
 
-    with app.app_context():
-        db.create_all()
+    # with app.app_context():
+    #     db.create_all()
         
     return app
 
